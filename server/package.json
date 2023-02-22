@@ -1,0 +1,13 @@
+{
+  "name": "hyperswitch-demo-app",
+  "description": "Merchant Server required to integrate HyperSwitch sdk",
+  "version": "0.1.0",
+  "main": "server.js",
+  "dependencies": {
+    "@juspay-tech/hyper-node": "^1.0.0",
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
