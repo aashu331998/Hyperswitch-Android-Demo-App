@@ -11,9 +11,9 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven {
-            url "https://bitbucket.org/shashank-shivam/maven/raw/releases"
+            url "https://maven.hyperswitch.io/release/production/1.0.0-alpha01"
         }
-
+        
     }
 }
 rootProject.name = "HyperswitchDemoApp"
