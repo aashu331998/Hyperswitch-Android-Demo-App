@@ -12,7 +12,7 @@ A simple Android app to demo the new hyperswitch android library
 
 ```
 //in server/server.js
-const hyper = require("@juspay-tech/hyper-node")("api_key");
+const hyper = require("@juspay-tech/hyperswitch-node")("api_key");
 ```
 
 ```

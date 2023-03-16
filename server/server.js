@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 // replace the test api key with your hyperswitch api key
-const hyper = require("@juspay-tech/hyper-node")(
+const hyper = require("@juspay-tech/hyperswitch-node")(
   "snd_9d552d20e1f0411e8c9c45193cdc0677"
 );
 
@@ -20,7 +20,7 @@ app.post("/create-payment-intent", async (request, response) => {
   //create a payment using amount, currency, metadata etc.
   const paymentIntent = await hyper.paymentIntents.create({
     amount: calculateAmount(items),
-    currency: "usd",
+    currency: "USD",
   });
 
   //return clientSecret to initiate payment flow at the client
