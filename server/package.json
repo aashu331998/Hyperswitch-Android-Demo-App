@@ -1,13 +1,19 @@
 {
-  "name": "hyperswitch-demo-app",
-  "description": "Merchant Server required to integrate HyperSwitch sdk",
-  "version": "0.1.0",
+  "name": "ls",
+  "version": "1.0.0",
+  "description": "A sample Stripe implementation",
   "main": "server.js",
-  "dependencies": {
-    "@juspay-tech/hyperswitch-node": "^1.0.1",
-    "express": "^4.17.1"
-  },
   "scripts": {
     "start": "node server.js"
+  },
+  "author": "stripe-samples",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "stripe": "^9.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "n"
   }
 }
