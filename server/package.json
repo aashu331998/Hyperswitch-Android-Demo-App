@@ -9,6 +9,7 @@
   "author": "stripe-samples",
   "license": "ISC",
   "dependencies": {
+    "@juspay-tech/hyperswitch-node": "^1.0.1",
     "express": "^4.18.2",
     "stripe": "^9.16.0"
   },

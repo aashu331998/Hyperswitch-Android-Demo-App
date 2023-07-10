@@ -54,7 +54,7 @@ fs.readFile("../app/build.gradle", "utf8", (err, data) => {
 
 //modify CheckoutForm.js import
 fs.readFile(
-  "../app/src/main/java/com/nitishkr/hyperswitchdemoapp/CheckoutActivity.kt",
+  "../app/src/main/java/com/hyperswitch/hyperswitchAndroidDemoApp/CheckoutActivity.kt",
   "utf8",
   (err, data) => {
     if (err) {
@@ -76,7 +76,7 @@ fs.readFile(
       );
 
     fs.writeFile(
-      "../app/src/main/java/com/nitishkr/hyperswitchdemoapp/CheckoutActivity.kt",
+      "../app/src/main/java/com/hyperswitch/hyperswitchAndroidDemoApp/CheckoutActivity.kt",
       replacedNodePckge,
       function (err) {
         if (err) return console.log(err);
@@ -90,7 +90,7 @@ fs.readFile(
 
 // implement HyperInterface in activity where you wanted to open paymentsheet
 fs.readFile(
-  "../app/src/main/java/com/nitishkr/hyperswitchdemoapp/MainActivity.kt",
+  "../app/src/main/java/com/hyperswitch/hyperswitchAndroidDemoApp/MainActivity.kt",
   "utf8",
   (err, data) => {
     if (err) {
@@ -103,7 +103,7 @@ fs.readFile(
     );
 
     fs.writeFile(
-      "../app/src/main/java/com/nitishkr/hyperswitchdemoapp/MainActivity.kt",
+      "../app/src/main/java/com/hyperswitch/hyperswitchAndroidDemoApp/MainActivity.kt",
       replacedNodePckge,
       function (err) {
         if (err) return console.log(err);
