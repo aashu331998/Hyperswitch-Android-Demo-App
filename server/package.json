@@ -4,8 +4,9 @@
   "version": "0.1.0",
   "main": "server.js",
   "dependencies": {
-    "@juspay-tech/hyperswitch-node": "^1.0.1",
-    "express": "^4.17.1"
+    "dotenv": "^16.4.7",
+    "express": "^4.17.1",
+    "node-fetch": "^3.3.2"
   },
   "scripts": {
     "start": "node server.js"

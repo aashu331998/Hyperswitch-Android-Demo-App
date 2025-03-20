@@ -1,8 +1,17 @@
 pluginManagement {
     repositories {
-        google()
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
         mavenCentral()
         gradlePluginPortal()
+        maven {
+            url "https://maven.hyperswitch.io/release/production/android/maven/1.0.9"
+        }
     }
 }
 dependencyResolutionManagement {
@@ -11,10 +20,10 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven {
-            url "https://maven.hyperswitch.io/release/production/1.0.0-alpha01"
+            url "https://maven.hyperswitch.io/release/production/android/maven/1.0.9"
         }
-        
     }
 }
+
 rootProject.name = "HyperswitchDemoApp"
 include ':app'

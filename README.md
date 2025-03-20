@@ -6,34 +6,25 @@ A simple Android app to demo the new hyperswitch android library
 
 1. Build the application
 
-2. Provide valid API key in server/server.js and Publishable key in CheckoutActivity.kt. You can create your keys using the Hyperswitch dashboard. https://app.hyperswitch.io/
-
 > Note: You can checkout the live demo app on google play store here. https://play.google.com/store/apps/details?id=io.hyperswitch.hyperecom
 
-```
-//in server/server.js
-const hyper = require("@juspay-tech/hyperswitch-node")("api_key");
-```
+2. In `server` folder 
+Add the `.env` with the following keys
 
 ```
-//in CheckoutActivity.kt
-// replace the test publishable key with your hyperswitch publishable key
-    PaymentConfiguration.init(
-        applicationContext,
-        "publishable_key"
-    )
+HYPERSWITCH_PUBLISHABLE_KEY=""
+HYPERSWITCH_SECRET_KEY=""
+PROFILE_ID=""
 ```
 
-3. Run the Server
+You can create your keys using the Hyperswitch dashboard. https://app.hyperswitch.io/
 
-```
-//in server folder
-npm install
-```
+3. Do ` yarn install` or `npm install`
 
-```
-//then run the server through command
-npm start
-```
+4. then run `yarn server` or `npm run server`
 
-4. Run the application
+5. Open the android app and click on the Reload Client Secret button
+
+### Note: 
+To test in real device. 
+replace the serverUrl with your device IP address in `MainActivity` in android folder `app/src/main/java/com/hyperswitch/hyperswitchdemoapp/MainActivity.kt`
