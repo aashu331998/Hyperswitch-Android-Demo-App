@@ -5,8 +5,7 @@
   "main": "server.js",
   "dependencies": {
     "dotenv": "^16.4.7",
-    "express": "^4.17.1",
-    "node-fetch": "^3.3.2"
+    "express": "^4.17.1"
   },
   "scripts": {
     "start": "node server.js"

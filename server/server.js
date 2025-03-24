@@ -1,7 +1,5 @@
 const express = require('express');
-// const cors = require('cors');
 const app = express();
-// app.use(cors());
 app.use(express.static('./dist'));
 app.use(express.json());
 
@@ -49,7 +47,6 @@ app.get('/create-payment-intent', async (req, res) => {
       customer_id: 'hyperswitch_demo_id',
       capture_method: 'automatic',
       email: 'abc@gmail.com',
-      profile_id:'pro_ni6V021VzcFfdjIxEFg7',
       billing: {
         address: {
           line1: '1467',
@@ -170,5 +167,3 @@ app.get('/netcetera-sdk-api-key', (req, res) => {
 app.listen(PORT, () =>
   console.log(`Node server listening at http://localhost:${PORT}`),
 );
-
-
